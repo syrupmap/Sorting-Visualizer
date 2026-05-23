@@ -1,16 +1,31 @@
 .array-container{
-    position: absolute;
+    position: relative;
     left: 100px;
+    right: 200px;
+    top: 20px;
+    bottom: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+.button-container{
+    position: relative;
+    left: 100px;
+    top: 20px;
+    bottom: 20px;
 }
 
 .array-bar{
-    width: 7px;
+    flex: 1 1 0;
+    min-width: 0;
     height: 60%;
     background-color: pink;
-    display: inline-block;
     margin: 0 1px;
 }
 
 button{
-    padding: 10px
+    padding: 10px;
 }
