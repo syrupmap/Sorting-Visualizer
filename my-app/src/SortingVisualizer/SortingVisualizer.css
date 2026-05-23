@@ -1,0 +1,16 @@
+.array-container{
+    position: absolute;
+    left: 100px;
+}
+
+.array-bar{
+    width: 7px;
+    height: 60%;
+    background-color: pink;
+    display: inline-block;
+    margin: 0 1px;
+}
+
+button{
+    padding: 10px
+}
