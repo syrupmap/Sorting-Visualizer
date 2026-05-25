@@ -1,7 +1,7 @@
 .array-container{
     position: relative;
     left: 100px;
-    right: 200px;
+    right: 500px;
     top: 20px;
     bottom: 20px;
     display: flex;
