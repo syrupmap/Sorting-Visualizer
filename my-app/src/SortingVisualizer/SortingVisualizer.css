@@ -8,7 +8,11 @@
     justify-content: space-between;
     border: 1px solid #ccc;
     overflow: hidden;
-    height: 1000px;
+    height: 1000px; /* Since the greatest value an index could have is 1000px, 
+                    the max height of the array-container would be 1000px. 
+                    Thus, in order to keep the container from changing sizes 
+                    constantly depending on the changing overall max-value, 
+                    the set height is 1000px */
     width: 80%;
 }
 
@@ -21,10 +25,14 @@
 }
 
 .array-bar{
-    flex: 1 1 0;
+    flex: 1 1 0; /* Basically means 3 things...
+                    flex-grow: 1 → each bar can grow and share available space equally 
+                    flex-shrink: 1 → bars can shrink if needed
+                    flex-basis: 0 → start from zero width 
+                    This results in the bars spreading evenly across the container */
     min-width: 0;
     height: 60%;
-    background-color: pink;
+    background-color: rgb(198, 198, 198);
     margin: 0 1px;
 }
 
